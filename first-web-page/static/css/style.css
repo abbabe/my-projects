@@ -1,0 +1,29 @@
+.heading{
+
+    color:rgb(119, 9, 77);
+    font-size: 35px;
+    text-align: center;
+}
+
+.left  img{
+width: 400px;
+height:400px;
+float: left;
+border: 2px solid gray;
+}
+
+.right h1{
+    color:#088d8d;
+    text-align:center;
+    font-size:x-large;
+    float: center;
+    padding: 0px 50px;
+    box-sizing: border-box;
+}
+
+.info{
+
+    color:#088181;
+    float: center;
+    text-align: center;
+}
