@@ -13,26 +13,42 @@
 
 <body>
 
-    <div class="container">
-        <h1 class="heading"> WHO AM I ? </h1>
 
-
-
-        <div class="left">
-            <img src="{{ url_for('static',filename='images/res.jpg')}}" height="{{400}}" width="{{400}}"
-                alt="IMAGE ERROR">
+    <section>
+        <div>
+            <h1 class="heading"> WHO AM I ? </h1>
         </div>
 
-        <div class="right">
+    </section>
 
-            <h1> Hi, I’m Ayhan.<br />
-                I’m interested in Java, Android, Phyton, C# and AWS,DevOps .<br />
-                I’m currently learning java and AWS . I’m looking to collaborate on java projects<br />
-            </h1>
+    <section>
+        <div class="container">
+       
 
+            <div class="left">
+                <img src="{{ url_for('static',filename='images/res.jpg')}}" height="{{400}}" width="{{400}}"
+                    alt="IMAGE ERROR">
+            </div>
+    
+            <div class="right">
+    
+                <h1> Hi, I’m Ayhan.<br />
+                    I’m interested in Java, Android, Phyton, C# and AWS,DevOps .<br />
+                    I’m currently learning java and AWS . I’m looking to collaborate on java projects<br />
+                </h1>
+    
+            </div>
         </div>
-    </div>
+    
 
+    </section>
+
+    <section>
+        <img src="{{ url_for('static',filename='images/underconst.png')}}" height="{{200}}" width="{{400}}"
+        alt="IMAGE ERROR">
+
+    </section>
+   
 
 
 

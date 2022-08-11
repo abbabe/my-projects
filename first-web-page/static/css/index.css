@@ -108,7 +108,7 @@ nav img {
 /* using via media page style */
 
 nav .fa{
-    display: none;
+    display:none;
     /* will be hidden on the fullscreen page */
 }
 
@@ -162,13 +162,22 @@ nav .fa{
 }
 
 .icons .fa{
-color: #f44336;
+color: #2d1097;
 margin: 0 13px;
 cursor: pointer;
 padding: 18px 0;
 
 }
 
-.fa-heart-o {
-    color: #f44336;
+.fa-brands {
+    color: #1e5c06;
+    
+}
+
+
+
+.fa-solid  {
+    color: #960702;
+    
+    
 }
