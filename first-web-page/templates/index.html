@@ -4,51 +4,104 @@
 
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" http-equiv="Content-Type"
+        content="text/html; charset=utf-8" />
     <title>DagiCloud</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css')}}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+        
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
-        <a href="{{ url_for('about') }}" class="navbar-item">About</a>
-        <a href="{{ url_for('contact') }}" class="navbar-item">Contact</a>
-    </div>
+  
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="/static/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
 
-    <div class="body-content">
+                <ul>
 
-        <article>
-            <header>
-                <font color="blue">
-                    <h1>ŞİİR DEFTERİ</h1>
-                </font>
-                <font color="red">
-                    <h3>DUVAR</h3>
-                </font>
-                
-                <p>Şu dışarıdaki uçan kuş mu ? <br />
-                    Ya şu uzaktan parıldayan güneş<br />
-                    Dolar mı dört duvarın demir parmaklıklarından içeri<br />
-                    Bir ileri , bir geri dönme dolap gibi<br />
-                    Gidiyorum odamın içinde<br />
-                    Ben gidiyorum, ayaklarım gidiyor<br />
-                    Ağzımda bir türkü, hayalimde bir patika<br />
-                    Yollar, dereler, dağlar aşıyorum<br />
-                    Aştıkça aşıyorum dertlerimi, kederlerimi ve hüzünlerimi<br />
-                    Ama gözler açıldığında buluyorum yine kendimi<br />
-                    Koridorun sonunda dört duvar arasında</p> 
-            </header>
+                   
+                    <li> <a href="">HOME</a></li>
+                    <li> <a href="{{ url_for('about') }}" class="navbar-brand">ABOUT</a></li>
+                    <li> <a href="">CONTACT</a></li>
+                </ul>
 
-        </article>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            <!-- we added fa fabar and fa times for mobile phone icons is added clickable fonc-->
+        </nav>
+
+        <div class="text-box">
+            <h1>DUVAR</h1>
+            <p>Şu dışarıdaki uçan kuş mu ? <br />
+                Ya şu uzaktan parıldayan güneş<br />
+                Dolar mı dört duvarın demir parmaklıklarından içeri<br />
+                Bir ileri , bir geri dönme dolap gibi<br />
+                Gidiyorum odamın içinde<br />
+                Ben gidiyorum, ayaklarım gidiyor<br />
+                Ağzımda bir türkü, hayalimde bir patika<br />
+                Yollar, dereler, dağlar aşıyorum<br />
+                Aştıkça aşıyorum dertlerimi, kederlerimi ve hüzünlerimi<br />
+                Ama gözler açıldığında buluyorum yine kendimi<br />
+                Koridorun sonunda dört duvar arasında</p>
+            <a href="" class="visit-button">Visit Us To Know More</a>
+        </div>
 
 
-        <hr />
-        <footer>
-            <p>designed by abbabe ©2022 </p>
 
-        </footer>
-    </div>
+
+
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-----Footer   designed by abbabe ©2022-->
+    <section class="footer">
+
+
+        <h4>About Us</h4>
+        <p>We are working on Cloud Systems since 2022. If you want to solution, we just look at the sky.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+
+        </div>
+        <p> designed by <i class="fa fa-heart-o"></i>abbabe </p>
+
+    </section>
+
+
+
+
+
+
+
 </body>
 
 </html>
