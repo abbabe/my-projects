@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/body.css')}}" />
+</head>
+
+<body>
+
+
+    <div class="for">
+
+        <!---    For loop -->
+        <ul>
+            {% for x in object %}
+
+            <h2 >
+                <li>Welcome on board {{ x }}!</li>
+            </h2>
+
+            {% endfor %}
+        </ul>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
