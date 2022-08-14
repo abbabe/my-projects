@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Evens</title>
+    <link rel="stylesheet" type="text/css" href="static/css/evens.css" />
+</head>
+<body >
+    <div class="head"><h1>Showing Even Number from 1 to 100 with Jinja2</h1></div>
+    
+    <ul>
+     {% for x in range(1,101) %}
+        {% if x % 2 == 0 %}
+        <li><h1>Number {{ x }} is even</h1></li>
+        {% endif %}
+     {% endfor %}
+    </ul>
+</body>
+</html>
